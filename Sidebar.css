@@ -1,0 +1,141 @@
+.upperline {
+    width: 40px;
+    height: 5px;
+    background-color: rgba(159, 45, 230, 0.885);
+    position: absolute;
+    top: 50px;
+    transform: rotate(0deg) translatey(0px) translateX(0px);
+    transition: transform 1050ms;
+    z-index: -1;
+}
+.middleline {
+    width: 40px;
+    height: 5px;
+    background-color: rgba(159, 45, 230, 0.885);
+    position: absolute;
+    top: 60px;
+    transform: rotate(-0deg);
+    transition: transform 1050ms;
+    z-index: -1;
+}
+.lowerline {
+    width: 40px;
+    height: 5px;
+    background-color: rgba(159, 45, 230, 0.885);
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    transition:  transform 1050ms;
+}
+input:checked ~ .upperline {
+    transform: rotate(45deg) translatey(5px) translateX(5px);
+}
+input:checked ~ .middleline {
+    transform: rotate(-45deg) translateY(-2px);
+}
+input:checked ~ .lowerline {
+    width: 70px;
+    transform: translateX(89px) translateY(25px);
+    transition:  transform 1050ms;
+}
+input {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    opacity:0;
+}
+.sidebarbody {
+    z-index: -2;
+    margin-top: 40px;
+    transform: translatey(-20px) translateX(-300px);
+    transition: transform 1050ms;
+
+}
+
+.sidebarcontents {
+    position: absolute;
+    top: 10px;
+}
+.text1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 1px;
+    left: 90px;
+    color: rgba(0, 128, 255, 0.806);
+
+}
+.content1 {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    font-size: 30px;
+    width: 400px;
+    cursor: pointer;
+    
+    
+}
+.content1:hover {
+    background-color: brown;
+}
+.content2 {
+    position: absolute;
+    top:190px;
+    left: 5px;
+    font-size: 30px;
+    width: 400px;
+    cursor: pointer;
+   
+
+}
+.content2:hover {
+    background-color: brown;
+}
+.content3 {
+    position: absolute;
+    top: 280px;
+    left: 5px;
+    font-size: 30px;
+    width: 400px;
+    cursor: pointer;
+    
+
+}
+.content3:hover {
+    background-color: brown;
+}
+.content4 {
+    position: absolute;
+    top: 360px;
+    left: 5px;
+    font-size: 30px;
+    width: 400px;
+    cursor: pointer;
+    
+
+}
+.content4:hover {
+    background-color: brown;
+}
+.content5 {
+    position: absolute;
+    top: 450px;
+    left: 5px;
+    font-size: 30px;
+    width: 400px;
+    cursor: pointer;
+    
+}
+.content5:hover {
+    background-color: brown;
+}
+input:checked ~ .sidebarbody {
+    transform: translatey(0px) translateX(0px);
+    transition: transform 1050ms;
+}
+
+
+
+
+
+
